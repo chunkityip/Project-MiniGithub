@@ -1,0 +1,8 @@
+{% extends 'layout.html' %} 
+{% block content %} 
+	{% for info in posts %}
+		<h1>{{ info.title }}</h1>
+		<p>On {{ info.post }}</p>
+		<img src="{{url_for('static', filename='logo.jpg')}}" />
+	{% endfor %} 
+{% endblock content %}
